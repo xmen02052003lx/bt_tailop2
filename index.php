@@ -32,24 +32,25 @@ if (!empty($searchKeyword)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
 </head>
 <body>
-    <h2><a href="index.php">Click here to go to Home Page</a></h2>
+    <h2><a href="index.php" class="home-link">Click here to go to Home Page</a></h2>
 
     <!-- Add Item Form -->
     <form action="" method="post">
         <label for="item_name">Add Item:</label>
-        <input type="text" id="item_name" name="item_name" required>
-        <button type="submit">Add Item</button>
+        <input class="" type="text" id="item_name" name="item_name" required>
+        <button type="submit" class="btn btn-primary btn-sm">Add Item</button>
     </form>
 
     <!-- Search Form -->
     <form action="" method="get">
         <label for="search">Search:</label>
         <input type="text" id="search" name="search" value="<?= htmlspecialchars($searchKeyword) ?>">
-        <button type="submit">Search</button>
+        <button type="submit" class="btn btn-primary btn-sm">Search</button>
     </form>
 
     <!-- Display Items -->
