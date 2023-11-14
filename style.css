@@ -1,0 +1,29 @@
+/* Add any additional styles you want */
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 8px;
+  margin: 2px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
